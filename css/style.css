@@ -1,4 +1,10 @@
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: white; 
+}
+
+
 .cabecalhoContainer {
     margin-top: 2%;
     width: 100%;
@@ -35,4 +41,275 @@
 #menuNav li a:hover, #menuLogin li a:hover {
     background-color:  #deacab;
     color: white;
+}
+
+.secaoHero {
+    display: flex;
+    align-items: center;
+    padding: 80px 5%;
+    background-color: #f7f3f1; 
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.conteudoHero {
+    flex: 1;
+    max-width: 50%;
+}
+
+.imagemHero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.quadroImagem {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    background-color: #8f987d; 
+    background-image: url('imagem.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.tagInovacao {
+    display: inline-block;
+    background-color: #e8cac8; 
+    color: #deacab; 
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tituloPrincipal {
+    font-size: 3em;
+    color: #697159; 
+    margin: 0 0 15px 0;
+}
+
+.destaqueTitulo {
+    color: #deacab; 
+}
+
+.textoDescricao {
+    font-size: 1.1em;
+    color: #8f987d; 
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.areaBotoes a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 15px;
+}
+
+.botaoPrimario {
+    background-color: #697159; 
+    color: white;
+    border: 2px solid #697159;
+}
+
+.botaoPrimario:hover {
+    background-color: #555d49;
+}
+
+.botaoSecundario {
+    background-color: transparent;
+    color: #697159; 
+    border: 2px solid #697159;
+}
+
+.botaoSecundario:hover {
+    background-color: #697159;
+    color: white;
+}
+
+
+.secaoTecnologia {
+    text-align: center;
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f7e9e8; 
+}
+
+.tituloSecundario {
+    font-size: 2.5em;
+    color: #697159; 
+    margin-bottom: 10px;
+}
+
+.subtituloTecnologia {
+    font-size: 1.1em;
+    color: #8f987d; 
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardsRecursos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cardRecurso {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    background-color: white; 
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid #f2e0e0; 
+}
+
+.cardRecurso:hover {
+    transform: translateY(-5px);
+}
+
+.iconeCard {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background-color: #f7e9e8; 
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svgIcone {
+    width: 30px;
+    height: 30px;
+    color: #deacab; 
+}
+
+.tituloCard {
+    font-size: 1.3em;
+    color: #697159; 
+    margin: 0 0 10px 0;
+}
+
+.textoCard {
+    color: #8f987d; 
+    font-size: 0.95em;
+}
+
+
+
+.secaoSustentavel {
+    padding: 80px 5%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-top: 100px; 
+    padding-bottom: 100px;
+}
+
+
+.caixaInformativa {
+    max-width: 750px;
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #ffffff 0%, #fcf3f3 100%); 
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border: 3px solid #f9e9e9; 
+    z-index: 1;
+}
+
+.tituloCaixa {
+    font-size: 1.8em;
+    color: #697159; 
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.textoCaixa {
+    font-size: 1.1em;
+    color: #8f987d; 
+    line-height: 1.5;
+}
+
+
+
+@media (max-width: 900px) {
+    .secaoHero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .conteudoHero {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .areaBotoes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .areaBotoes a {
+        margin: 5px;
+    }
+
+    .quadroImagem {
+        height: 300px;
+    }
+
+    .tituloPrincipal {
+        font-size: 2.5em;
+    }
+
+    .cardsRecursos {
+        justify-content: center;
+    }
+
+    .cardRecurso {
+        max-width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardRecurso {
+        max-width: 100%;
+    }
+    
+    .tituloPrincipal {
+        font-size: 2em;
+    }
+    
+    .tituloSecundario {
+        font-size: 2em;
+    }
+    
+    .tituloCaixa {
+        font-size: 1.5em;
+    }
+
+    .caixaInformativa {
+        padding: 30px;
+    }
 }
