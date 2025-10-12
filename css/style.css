@@ -252,6 +252,75 @@ body {
 }
 
 
+.botaoFlutuante {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoFlutuante:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+
+.tema-escuro {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.tema-escuro .cabecalhoContainer {
+    background: rgba(26, 26, 26, 0.95) !important;
+    border-bottom: 1px solid #333;
+}
+
+.tema-escuro .secaoHero {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+}
+
+.tema-escuro .cardRecurso {
+    background: #2d2d2d !important;
+    border: 1px solid #444 !important;
+}
+
+.tema-escuro .botaoFlutuante {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+}
+
+
+.digitando {
+    border-right: 2px solid #0e4a27;
+    animation: piscar 0.7s infinite;
+}
+
+@keyframes piscar {
+    0%, 100% { border-color: #0e4a27; }
+    50% { border-color: transparent; }
+}
+
+.escondido {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.revelado {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+}
+
 
 @media (max-width: 900px) {
     .secaoHero {
