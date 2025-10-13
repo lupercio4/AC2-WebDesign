@@ -32,6 +32,7 @@ body {
 
 #menuNav a, #menuLogin a {
     color: #697159;
+    font-weight: bold;
     display: block;
     padding: 10px 5px;
     border-radius: 12px;
@@ -98,7 +99,7 @@ body {
 }
 
 .destaqueTitulo {
-    color: #deacab; 
+    color: #bdc6aa; 
 }
 
 .textoDescricao {
@@ -190,7 +191,7 @@ body {
     width: 60px;
     height: 60px;
     margin: 0 auto 15px;
-    background-color: #f7e9e8; 
+    background-color: #bdc6aa; 
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -200,7 +201,7 @@ body {
 .svgIcone {
     width: 30px;
     height: 30px;
-    color: #deacab; 
+    color: #697159; 
 }
 
 .tituloCard {

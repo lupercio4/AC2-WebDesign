@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: white; 
+}
+
+
+.cabecalhoContainer {
+    margin-top: 2%;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+#menuNav {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+}
+
+#menuLogin {
+    display: flex;
+    margin-right: 2%;
+}
+
+#menuNav li, #menuLogin li {
+    margin: 0 15px;
+}
+
+#menuNav a, #menuLogin a {
+    color: #697159;
+    font-weight: bold;
+    display: block;
+    padding: 10px 5px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+#menuNav li a:hover, #menuLogin li a:hover {
+    background-color:  #deacab;
+    color: white;
+}
