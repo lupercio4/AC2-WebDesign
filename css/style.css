@@ -223,6 +223,7 @@ body {
     background-color: white;
     padding-top: 100px; 
     padding-bottom: 100px;
+    margin: 0 4.1% 0 4.1%; 
 }
 
 
@@ -277,27 +278,90 @@ body {
 
 
 .tema-escuro {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
+/* Cabeçalho */
 .tema-escuro .cabecalhoContainer {
-    background: rgba(26, 26, 26, 0.95) !important;
-    border-bottom: 1px solid #333;
+    background: rgba(18, 18, 18, 0.95) !important;
+    border-bottom: 1px solid #2a2a2a;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
+
 
 .tema-escuro .secaoHero {
-    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    background: linear-gradient(135deg, #1f2a38, #2b3a4a) !important;
+    color: #f0f0f0;
 }
+
 
 .tema-escuro .cardRecurso {
-    background: #2d2d2d !important;
-    border: 1px solid #444 !important;
+    background: #1e1e1e !important;
+    border: 1px solid #333 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.tema-escuro .botaoFlutuante {
-    background: linear-gradient(135deg, #34495e, #2c3e50);
+.tema-escuro .cardRecurso:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
+
+
+.tema-escuro .botaoFlutuante {
+    background: linear-gradient(135deg, #3b4a5a, #2c3e50);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tema-escuro .botaoFlutuante:hover {
+    background: linear-gradient(135deg, #4a5c70, #3a4f63);
+    transform: translateY(-2px);
+}
+
+
+.tema-escuro .secaoTecnologia,
+.tema-escuro .secaoSustentavel {
+     background: linear-gradient(135deg, #1f2a38, #2b3a4a) !important;
+    color: #ddd;
+    border-top: 1px solid #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+
+.tema-escuro a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.tema-escuro a:hover {
+    color: #e0e0e0;
+}
+
+
+.tema-escuro button {
+    background: #1b1b1b;
+    color: #e0e0e0;
+    border: 1px solid #333;
+}
+
+.tema-escuro button:hover {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.tema-escuro p {
+    color: #e0e0e0;
+}
+
+.tema-escuro .textoCaixa {
+    color: #1b1b1b;
+}
+
 
 
 .digitando {
