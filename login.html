@@ -29,29 +29,42 @@
         </div>
     </header>
 
-    <section class="formContainer">
-        <p>Já possui conta? Entre aqui.</p>
-        <form class="formularioLogin">
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
-            <label for="senha">Senha: </label>
-            <input type="password" id="senha" name="senha" required>
-            <input type="submit" value="Entrar">
-        </form>
-    </section>
-    <section class="formContainer">
-        <p>Não possui conta? Cadastre-se aqui.</p>
-        <form class="formularioCadastro">
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
-            <label for="senha">Senha: </label>
-            <input type="password" id="senha" name="senha" required>
-            <label for="confirmaSenha">Confirmar Senha: </label>
-            <input type="password" id="confirmaSenha" name="confirmaSenha" required>
-            <input type="submit" value="Cadastrar">
-        </form>
-    </section>
+    <main class="formContainer">
+        <!-- Botões para alternar -->
+        <div class="toggleButtons">
+            <button id="btnLogin">Entrar</button>
+            <button id="btnCadastro">Cadastrar</button>
+        </div>
+
+        <!-- Seção de Login -->
+        <section id="loginSection">
+            <p>Já possui conta? Entre aqui.</p>
+            <form class="formularioLogin">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha" required>
+                <input type="submit" value="Entrar">
+            </form>
+        </section>
+
+        <!-- Seção de Cadastro -->
+        <section id="cadastroSection" style="display:none;">
+            <p>Não possui conta? Cadastre-se aqui.</p>
+            <form class="formularioCadastro">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="emailCadastro">Email: </label>
+                <input type="email" id="emailCadastro" name="email" required>
+                <label for="senhaCadastro">Senha: </label>
+                <input type="password" id="senhaCadastro" name="senha" required>
+                <label for="confirmaSenha">Confirmar Senha: </label>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" required>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+
+    <script src="/js/login.js"></script>
 </body>
 </html>
